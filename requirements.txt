@@ -7,3 +7,4 @@ gunicorn
 seaborn
 keras
 flask-bootstrap
+tensorflow-cpu
