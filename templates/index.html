@@ -1,0 +1,46 @@
+{% extends "bootstrap/base.html" %}
+<html>
+    <head>
+
+    </head>
+    <body>
+        {%block content%}
+        <div class="container">
+            
+            <div class="col-md-1">
+            <img src="/static/ibmimage.png" width="200" height="200" style=" margin-top: 30px ">
+            </div>
+            <div class="col-md-11">
+                <h1 style="text-align: center; margin-top: 100px; margin-left: -10px">Data Science Competition 3</h1>
+            </div>
+            
+        </div>
+        <div class="container" style="padding-top: 30px;">
+            <form method="POST", action="/">
+                <div class="mb-3">
+                    <div class="col-auto">
+                        <label for="inputcharacters" class="col-form-label">Input characters</label><br />
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" name="dwarf_first_chars" class="form-control input-sm"
+                        
+                        placeholder="Enter the first few characters for the Dwarf name"><br />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Generate a new name</button>
+                </div>
+                <br />
+                <div class="container">
+                {% if data %}
+
+                <b style="color: green;">{{data}}</b>
+            
+            
+                {% endif %}
+                </div>
+            </form>
+        </div>
+            
+
+        {%endblock%}
+    </body>
+</html>
