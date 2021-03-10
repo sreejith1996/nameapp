@@ -6,3 +6,4 @@ matplotlib
 gunicorn
 seaborn
 keras
+flask-bootstrap
